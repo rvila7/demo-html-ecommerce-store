@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Minimal HTML demo store for testing" />
+    <title>Harbor Goods — Demo Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="logo" href="index.html">Harbor Goods</a>
+        <nav class="nav">
+          <a href="index.html">Shop</a>
+          <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+            Cart <span class="cart-count" id="header-cart-count">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <h1>Everyday essentials</h1>
+        <p class="lede">A tiny static storefront — no framework, just HTML, CSS, and a pinch of JavaScript.</p>
+      </section>
+
+      <section class="products" id="product-grid" aria-label="Products"></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>Demo store for integration testing. Not a real merchant.</p>
+      </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
